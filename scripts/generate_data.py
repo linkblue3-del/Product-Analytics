@@ -77,7 +77,10 @@ for order_id in range(1001, 1001 + n_orders):
 df = pd.DataFrame(orders)
 
 # Save
-df.to_csv('data/sample_sales.csv', index=False)
+# df.to_csv('./data/sample_sales.csv', index=False)
+# /Workspace/Users/nirmalsudheer2901@gmail.com/Product-Analytics/data
+df.to_csv('/Workspace/Users/nirmalsudheer2901@gmail.com/Product-Analytics/data/sample_sales.csv', index=False)
+# df./Workspace/Users/nirmalsudheer2901@gmail.com/Product-Analytics/data
 print(f"✅ Generated {len(df)} sales records")
 print(f"\nCategories: {df['category'].value_counts().to_dict()}")
 print(f"Date range: {df['order_date'].min()} to {df['order_date'].max()}")
